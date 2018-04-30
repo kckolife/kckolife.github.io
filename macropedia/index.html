@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/html401-rdfa11-1.dtd">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Macropedia by KCKO Life</title>
+        <meta name="author" content="KCKO Life">
+        <link rel="author" href="https://www.kcko.life/">
+        <meta name="description" content="Macropedia is the macro calculator for the ketogenic diet.">
+        <meta name="keywords" content="Macropedia, macronutrients, macros, macro tracker, macro calculator, ketogenic diet, keto, low carb">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Macropedia by KCKO Life">
+        <meta property="og:url" content="https://www.kcko.life/macropedia/">
+        <meta property="og:description" content="Macropedia is the macro calculator for the ketogenic diet.">
+        <meta property="og:site_name" content="KCKO Life">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image" content="https://www.kcko.life/macropedia/images/facebook-big.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@KCKOlife">
+        <meta name="twitter:image" content="https://www.kcko.life/macropedia/images/twitter-big.png">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/slides.css">
+        <script type="text/javascript" src="js/font.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
+        <script type="text/javascript">
+            document.addEventListener(
+                "DOMContentLoaded",
+                loadCSS("https://fonts.googleapis.com/css?family=Open+Sans")
+            );
+            document.addEventListener("DOMContentLoaded", initNav);
+        </script>
+        <script type="text/javascript" src="https://cdn.paddle.com/paddle/paddle.js"></script>
+        <script type="text/javascript">
+            Paddle.Setup({vendor: 31028});
+        </script>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function() {
+                buywin = document.getElementById('buy-win')
+                buymac = document.getElementById('buy-mac')
+                buywin.addEventListener('click', function() {
+                    Paddle.Checkout.open({product: 533788});
+                }, false);
+                buymac.addEventListener('click', function() {
+                    Paddle.Checkout.open({product: 529712});
+                }, false);
+            });
+        </script>
+        <script type="text/javascript" src="https://www.w3counter.com/tracker.js?id=119986"></script>
+        <style type="text/css">
+            body {
+                background: #ffffff;
+            }
+            @media screen {
+                body {
+                    color: #333333;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 12pt;
+                }
+                h1 {
+                    font-size: 24pt;
+                }
+                h2 {
+                    font-size: 18pt;
+                }
+                h3 {
+                    font-size: 14pt;
+                }
+                .small {
+                    font-size: 80%;
+                }
+                .center {
+                    text-align: center;
+                }
+                .right {
+                    text-align: right;
+                }
+                .container {
+                    width: 100%;
+                    max-width: 100%;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+                #header, #footer {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-top: 15vh;
+                    padding-bottom: 15vh;
+                }
+                #footer {
+                    margin-top: 30vh;
+                }
+                #header, #footer, .slides {
+                    background-image: url("images/foods.png");
+                    background-repeat: repeat repeat;
+                }
+                #header > .row, #footer > .row {
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+                #header h1 {
+                    line-height: 64px;
+                }
+                #header h1:before {
+                    content: url("images/icon-64x64.png");
+                    display: inline-block;
+                    width: 64px;
+                    height: 64px;
+                    line-height: 64px;
+                    vertical-align: middle;
+                    padding-right: 10px;
+                }
+                .button {
+                    background: #ffffff;
+                }
+                th, td {
+                    padding-left: 1em;
+                    padding-right: 1em;
+                }
+                ul, ol {
+                    list-style-position: outside;
+                    margin-right: 2em;
+                }
+                ul {
+                    list-style-type: circle;
+                }
+                ul.inline {
+                    display: inline-block;
+                    list-style: none;
+                }
+                p + ul, p + ol {
+                    margin-top: -1em;
+                }
+                li {
+                    margin: 0;
+                }
+                #foods {
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 0.8em;
+                }
+                #foods tr td:first-child, #foods tr th:first-child {
+                    text-align: right;
+                }
+                #foods tr td:first-child + td, #foods tr th:first-child + th {
+                    text-align: left;
+                }
+                #foods tr td:first-child + td + td, #foods tr th:first-child + th + th {
+                    text-align: center;
+                }
+                #foods tr:last-child {
+                    font-weight: bold;
+                }
+                .section {
+                    padding-top: 3em;
+                    margin-top: -2em;
+                }
+                .nil {
+                    pointer-events: none;
+                }
+                #navbar ul {
+                    margin-left: 0;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header" class="container">
+            <div class="row center">
+                <h1 class="section">Macropedia</h1>
+                <p><strong>Macropedia</strong> is the macro calculator designed specifically for the ketogenic diet.</p>
+                <p><a href="#freetrial" class="button button-primary">Get Macropedia</a></p>
+            </div>
+            <div class="row center">
+                <div class="four columns">
+                    <p>Search a large database of over 8,000 foods in 25 food groups.</p>
+                </div>
+                <div class="four columns">
+                    <p>Compare and sort foods from most to least ketogenic.</p>
+                </div>
+                <div class="four columns">
+                    <p>Calculate the macronutrient profile of any combination of foods.</p>
+                </div>
+            </div>
+        </div>
+        <div id="navbar-parent" class="row"><div id="navbar">
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#freetrial">Free Trial</a></li>
+                <li><a href="#buynow">Buy Now</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </div></div>
+        <div class="container">
+            <h2 class="section" id="features">Features</h2>
+            <div class="row center">
+                <div class="six columns">
+                    <p><strong>Search</strong> over 8,000 foods in 25 food groups.</p>
+                    <p class="small">
+                        This large selection of foods is categorized into 25 food groups.
+                        Simply select or deselect individual food groups to suit your tastes.
+                        The free trial is limited to 5 food groups.
+                    </p>
+                </div>
+                <div class="six columns">
+                    <p><strong>View</strong> macronutrient profiles accurate to 0.1&nbsp;grams.</p>
+                    <p class="small">The macronutrient profile includes protein, carbohydrate and fat. The types of carbohydrate (fiber, sugar) and types of fat (saturated, monounsaturated, polyunsaturated) are also available for most foods.</p>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="six columns">
+                    <p><strong>Sort</strong> foods by individual macronutrient, or from most to least ketogenic.</p>
+                    <p class="small">Sort foods by protein, carbohydrate or fat; or according to your prefered diet: Dietary Guidelines, Classic Ketogenic&nbsp;(4:1), Modified Ketogenic&nbsp;(3:1), or Modified Atkins&nbsp;(1:1).</p>
+                </div>
+                <div class="six columns">
+                    <p><strong>Calculate</strong> the macronutrient profile and ratio of any combination of foods.</p>
+                    <p class="small">Enter any combination of foods, set the amounts according to your favorite recipes, and the calculator automatically tallies the total macronutrient content and ratios.</p>
+                </div>
+            </div>
+            <table id="foods">
+                <tr>
+                    <th>Number of foods</th>
+                    <th>Food Group</th>
+                    <th>Included in Free Trial</th>
+                </tr>
+                <tr><td>279</td><td>Dairy and Egg Products</td><td>&#10003;</td></tr>
+                <tr><td>360</td><td>Fruits and Fruit Juices</td><td>&#10003;</td></tr>
+                <tr><td>464</td><td>Lamb, Veal, and Game Products</td><td>&#10003;</td></tr>
+                <tr><td>137</td><td>Nut and Seed Products</td><td>&#10003;</td></tr>
+                <tr><td>836</td><td>Vegetables and Vegetable Products</td><td>&#10003;</td></tr>
+                <tr><td>165</td><td>American Indian/Alaska Native Foods</td><td></td></tr>
+                <tr><td>367</td><td>Baby Foods</td><td></td></tr>
+                <tr><td>879</td><td>Baked Products</td><td></td></tr>
+                <tr><td>961</td><td>Beef Products</td><td></td></tr>
+                <tr><td>371</td><td>Beverages</td><td></td></tr>
+                <tr><td>356</td><td>Breakfast Cereals</td><td></td></tr>
+                <tr><td>181</td><td>Cereal Grains and Pasta</td><td></td></tr>
+                <tr><td>363</td><td>Fast Foods</td><td></td></tr>
+                <tr><td>219</td><td>Fats and Oils</td><td></td></tr>
+                <tr><td>265</td><td>Finfish and Shellfish Products</td><td></td></tr>
+                <tr><td>381</td><td>Legumes and Legume Products</td><td></td></tr>
+                <tr><td>125</td><td>Meals, Entrees, and Side Dishes</td><td></td></tr>
+                <tr><td>341</td><td>Pork Products</td><td></td></tr>
+                <tr><td>389</td><td>Poultry Products</td><td></td></tr>
+                <tr><td>109</td><td>Restaurant Foods</td><td></td></tr>
+                <tr><td>170</td><td>Sausages and Luncheon Meats</td><td></td></tr>
+                <tr><td>177</td><td>Snacks</td><td></td></tr>
+                <tr><td>465</td><td>Soups, Sauces, and Gravies</td><td></td></tr>
+                <tr><td>64</td><td>Spices and Herbs</td><td></td></tr>
+                <tr><td>360</td><td>Sweets</td><td></td></tr>
+                <tr><td>8,784</td><td>Total</td><td></td></tr>
+            </table>
+        </div>
+        <div class="container">
+            <h2 class="section" id="screenshots">Screenshots</h2>
+        </div>
+        <div class="slides">
+            <div class="slide"><p><img src="images/screen-0.png" alt=""></p></div>
+            <div class="slide"><p><img src="images/screen-1.gif" alt=""></p></div>
+            <div class="slide"><p><img src="images/screen-2.gif" alt=""></p></div>
+            <div class="slide"><p><img src="images/screen-3.gif" alt=""></p></div>
+        </div>
+        <div class="container">
+            <h2 class="section" id="freetrial">Free Trial</h2>
+            <p>The free trial is fully functional and unlimited in time. Try it now!</p>
+            <p>Included in the free trial are 5 (of 25) food groups, for a total of about 2,000 foods.</p>
+            <div class="row">
+                <div class="six columns">
+                    <h3>Macropedia for Windows</h3>
+                    <p class="small">Requirements:</p>
+                    <ul class="small">
+                        <li>64-bit Intel-compatible processor;</li>
+                        <li>Windows 7 or later;</li>
+                    </ul>
+                    <p>
+                        <a class="button button-primary" href="files/Macropedia-1.2.1.exe">Macropedia-1.2.1.exe</a>
+                    </p>
+                    <p class="small">Instructions:</p>
+                    <ol class="small">
+                        <li>Download the installer;</li>
+                        <li>Run the installer and follow the wizard;</li>
+                        <li>Launch Macropedia from the Start menu.</li>
+                    </ol>
+                </div>
+                <div class="six columns">
+                    <h3>Macropedia for Mac</h3>
+                    <p class="small">Requirements:</p>
+                    <ul class="small">
+                        <li>64-bit Intel-compatible processor;</li>
+                        <li>macOS 10.12 Sierra or later;</li>
+                    </ul>
+                    <p>
+                        <a class="button button-primary" href="files/Macropedia-1.2.1.dmg">Macropedia-1.2.1.dmg</a>
+                    </p>
+                    <p class="small">Instructions:</p>
+                    <ol class="small">
+                        <li>Download the installer;</li>
+                        <li>Open the installer and follow the instructions;</li>
+                        <li>Launch Macropedia from the Launchpad.</li>
+                    </ol>
+                </div>
+            </div>
+            <h2 class="section" id="buynow">Buy Now</h2>
+            <p>So you liked the free trial and now you would like to unlock all 25 food groups and over 8,000 foods.</p>
+            <p>Buy Macropedia now for just $5 (<abbr title="US Dollars">USD</abbr>)!</p>
+            <div class="row">
+                <div class="six columns">
+                    <a id="buy-win" class="button button-primary">Buy Macropedia for Windows</a>
+                </div>
+                <div class="six columns">
+                    <a id="buy-mac" class="button button-primary">Buy Macropedia for Mac</a>
+                </div>
+            </div>
+            <h2 class="section" id="news">News</h2>
+            <div class="row">
+                <div class="four columns right">
+                    <p>July 26 2018</p>
+                </div>
+                <div class="eight columns">
+                    <p><strong>Version 1.2.1</strong></p>
+                    <p>Retina displays are now supported on macOS.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns right">
+                    <p>July 23 2018</p>
+                </div>
+                <div class="eight columns">
+                    <p><strong>Version 1.2</strong></p>
+                    <p>This version fixes minor graphical bugs.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns right">
+                    <p>June 30 2018</p>
+                </div>
+                <div class="eight columns">
+                    <p><strong>First launched.</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns right">
+                    <p>June 28 2018</p>
+                </div>
+                <div class="eight columns">
+                    <p>Version 1.1.1 (beta)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns right">
+                    <p>June 22 2018</p>
+                </div>
+                <div class="eight columns">
+                    <p>Version 1.1 (beta)</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="container">
+            <div class="row">
+                <p>Copyright &copy; 2018 KCKO Life.</p>
+                <p class="small">
+                    Windows is a registered trademark of the Microsoft Corporation.<br>
+                    Mac and macOS are trademarks of Apple Inc.<br>
+                    Intel is a trademark of Intel Corporation.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
